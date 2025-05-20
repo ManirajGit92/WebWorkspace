@@ -1,0 +1,81 @@
+.home-section {
+  height: 100vh;
+  // background: url("birdRobo.jpg") no-repeat center center/cover;
+  // background: url("https://picsum.photos/1920/1080") no-repeat center
+  //   center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: black;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-content {
+  text-align: center;
+  color: #ad2222;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.main-title {
+  font-size: 64px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.sub-title {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+/* Sliding Info Text */
+.sliding-info {
+  height: 30px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.info {
+  display: block;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  transition: opacity 0.5s ease;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.info.active {
+  opacity: 1;
+}
+
+/* CTA Button */
+.cta-button {
+  padding: 16px 32px;
+  font-size: 18px;
+  background: #f39c12;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #e67e22;
+}

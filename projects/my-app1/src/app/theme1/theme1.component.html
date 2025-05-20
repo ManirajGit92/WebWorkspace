@@ -1,0 +1,39 @@
+<nav class="navbar">
+  <div class="nav-logo">MyModernSite</div>
+  <ul class="nav-links">
+    <li><a (click)="scrollTo('home')">Home</a></li>
+    <li><a (click)="scrollTo('aboutus')">About Us</a></li>
+    <li><a (click)="scrollTo('team')">Team</a></li>
+    <li><a (click)="scrollTo('blogs')">Blogs</a></li>
+    <li><a (click)="scrollTo('feedbacks')">Feedbacks</a></li>
+    <li><a (click)="scrollTo('contactus')">Contact Us</a></li>
+  </ul>
+</nav>
+
+<div class="section" #home id="home">
+  <app-section1></app-section1>
+</div>
+
+<div class="section" #aboutus id="aboutus">
+  <app-section2></app-section2>
+</div>
+
+<div class="section" #team id="team">
+  <app-section3></app-section3>
+</div>
+
+<div class="section" #blogs id="blogs" style="overflow-x: auto;">
+  <app-section5></app-section5>
+</div>
+
+<div class="section" #feedbacks id="feedbacks" style="overflow-y: auto;">
+  <iframe
+    src="https://docs.google.com/forms/d/e/1FAIpQLScsTzCY_O5CeyeoCKCC4ZC55D0GKBujOCONHzW251f8mByDvA/viewform?embedded=true"
+    width="640" height="3252" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</div>
+
+<div class="section" #contactus id="contactus" style="overflow-y: auto;">
+  <app-section4></app-section4>
+</div>
+
+<app-chatpot></app-chatpot>

@@ -1,0 +1,23 @@
+<!-- AI Chatbot Floating Button -->
+<!-- <div class="chatbot-btn" (click)="toggleChatbot()">
+  🤖
+</div> -->
+
+<!-- Chatbot Popup -->
+<div class="chatbot-popup" [class.open]="isChatbotOpen">
+  <div class="chatbot-header">
+    <h3>AI Assistant</h3>
+    <button class="close-btn" (click)="toggleChatbot()">×</button>
+  </div>
+
+  <div class="chatbot-body">
+    <div class="chat-message bot">Hi! I'm your AI assistant. How can I help you today?</div>
+    <div class="chat-message user">Can you tell me about your services?</div>
+    <div class="chat-message bot">Sure — we offer web development, AI integration, and digital solutions!</div>
+  </div>
+
+  <div class="chatbot-footer">
+    <input type="text" placeholder="Type a message..." />
+    <button class="send-btn">➤</button>
+  </div>
+</div>

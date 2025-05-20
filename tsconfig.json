@@ -10,6 +10,11 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "skipLibCheck": true,
+    "paths": {
+      "my-lib1": [
+        "./dist/my-lib1"
+      ]
+    },
     "esModuleInterop": true,
     "sourceMap": true,
     "declaration": false,

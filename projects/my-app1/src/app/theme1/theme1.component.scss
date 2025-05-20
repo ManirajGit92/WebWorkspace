@@ -1,0 +1,114 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Navbar Styling */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(44, 62, 80, 0.85);
+  backdrop-filter: blur(10px);
+  color: #387888;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  z-index: 1000;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-logo {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 30px;
+}
+
+.nav-links a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #f39c12;
+}
+
+/* Section Styling */
+.section {
+  height: 100vh;
+  padding: 120px 50px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #dfe9f3 0%, #ffffff 100%);
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+.section:nth-child(even) {
+  background: linear-gradient(135deg, #f8fbff 0%, #ffffff 100%);
+}
+
+.section h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.section p {
+  font-size: 18px;
+  max-width: 700px;
+  color: #555;
+  line-height: 1.7;
+}
+
+/* Contact Section Special */
+#contactus {
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  color: #ecf0f1;
+}
+
+#contactus h1 {
+  color: #f1c40f;
+}
+
+#contactus p {
+  color: #bdc3c7;
+}
+
+/* Button Style (if needed) */
+.button {
+  margin-top: 20px;
+  padding: 14px 30px;
+  background: #f39c12;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background: #e67e22;
+}
+html {
+  scroll-behavior: smooth;
+}
